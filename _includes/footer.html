@@ -30,9 +30,10 @@
 								</section>-->
 							</div>
 						</div>
+
 						<section class="6u">
 							<h3>Get In Touch</h3>
-							<form action="http://formspree.io/dstamen@gmail.com" method="POST">
+							<form id="contactform" method="POST">
 								<div class="row half collapse-at-2">
 									<div class="6u">
 										<input type="text" name="name" id="name" placeholder="Name" />
@@ -60,6 +61,10 @@
 									</div>
 								</div>
 							</form>
+							<script>
+							    var contactform =  document.getElementById('contactform');
+							    contactform.setAttribute('action', '//formspree.io/' + 'dstamen' + '@' + 'gmail' + '.' + 'com');
+							</script>
 						</section>
 					</div>
 				</div>
