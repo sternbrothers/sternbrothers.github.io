@@ -3,3 +3,5 @@ description: Arcana template for Jekyll
 paginate: 10
 gems:
   - jekyll-sitemap
+
+theme: jekyll-theme-cayman
