@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Stern Brothers Plumbing Supply</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="/assets/css/ie/html5shiv.js"></script><![endif]-->
+		<script src="/assets/js/jquery.min.js"></script>
+		<script src="/assets/js/jquery.dropotron.min.js"></script>
+		<script src="/assets/js/skel.min.js"></script>
+		<script src="/assets/js/skel-layers.min.js"></script>
+		<script src="/assets/js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="/assets/css/skel.css" />
+			<link rel="stylesheet" href="/assets/css/style.css" />
+			<link rel="stylesheet" href="/assets/css/style-wide.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+
+				<!-- Logo -->
+					<h1><a href="/index.html" id="logo">Stern Brothers Plumbing Supply</a><br><em>House of a million parts. If we don't have it, we we'll get it!</em></h1>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							{% assign current = page.url | downcase | split: '/' %}
+							<li {% if current[1] == 'index.html' %}class="current"{% endif %}><a href="/index.html">Welcome</a></li>
+							<li>
+								<!-- Nav -->
+								<!-- Comment out Dropdown
+								<a href="">Dropdown</a>
+								<ul>
+									<li><a href="#">Lorem dolor</a></li>
+									<li><a href="#">Magna phasellus</a></li>
+									<li><a href="#">Etiam sed tempus</a></li>
+									<li><a href="#">Veroeros feugiat</a></li>
+								</ul>
+								-->
+							</li>
+							<li {% if current[1] == 'services.html' %}class="current"{% endif %}><a href="/services.html">Services</a></li>
+							<li {% if current[1] == 'location.html' %}class="current"{% endif %}><a href="/location.html">Locations</a></li>
+						</ul>
+					</nav>
+
+			</div>
